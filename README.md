@@ -32,7 +32,7 @@ This library pretends to provide *ViewHolder* with these capabilities, giving to
 ```groovy
 dependencies {
     //...
-    implementation 'dev.sarquella:lifecyclecells:1.0.0'
+    implementation 'dev.sarquella.lifecyclecells:lifecyclecells:1.0.0'
 }
 ```
 
@@ -136,6 +136,7 @@ class MyViewHolder(itemView: View) : LifecycleViewHolder(itemView) {
 	//...
 } 
 ```
+
 ## License
 [LICENSE](https://github.com/Sarquella/LifecycleCells/blob/master/LICENSE)
 

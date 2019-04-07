@@ -8,7 +8,7 @@ ext {
 
     libraryName = 'lifecyclecells'
 
-    publishedGroupId = 'dev.sarquella'
+    publishedGroupId = 'dev.sarquella.lifecyclecells'
     artifact = 'lifecyclecells'
     libraryVersion = '1.0.0'
 
