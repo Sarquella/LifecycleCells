@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lifecycle Cells</string>
+    <string name="Done">Done</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Edit">Edit</string>
+    <string name="Contacts">Contacts</string>
+    <string name="Empty_field_error">Field can not be empty</string>
+    <string name="Name">Name</string>
+    <string name="Number">Number</string>
+    <string name="Surname">Surname</string>
+</resources>

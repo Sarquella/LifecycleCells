@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textViewStyle">@style/TextPrimary</item>
+        <item name="android:buttonStyle">@style/TextButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Text Styles -->
+    <style name="TextPrimary" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="TextSecondary" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="TextButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

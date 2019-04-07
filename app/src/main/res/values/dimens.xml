@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SPACES -->
+    <dimen name="space_large">24dp</dimen>
+    <dimen name="space_base">16dp</dimen>
+    <dimen name="space_small">8dp</dimen>
+
+    <!-- SIZES -->
+    <dimen name="size_icon">24dp</dimen>
+    <dimen name="size_cell_height">72dp</dimen>
+    <dimen name="size_dialog_header_height">120dp</dimen>
+    <dimen name="size_dialog_header_icon">56dp</dimen>
+    <dimen name="size_dialog_footer_height">52dp</dimen>
+    <dimen name="app_bar_height">90dp</dimen>
+</resources>

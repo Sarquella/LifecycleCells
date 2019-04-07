@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "dev.sarquella.lifecyclecell"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //LifecycleCells
+    implementation project(':lifecyclecells')
+
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+
+    //Android Jetpack
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.paging:paging-runtime:$paging_version"
+}
