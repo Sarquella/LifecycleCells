@@ -10,10 +10,11 @@ ext {
 
     publishedGroupId = 'dev.sarquella.lifecyclecells'
     artifact = 'lifecyclecells'
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
-    libraryDescription = 'An Android library that provides a Lifecycle to any ViewHolder through the implementation ' +
-            'of the LifecycleOwner interface, allowing it to interact with a Lifecycle-Aware Component.'
+    libraryDescription = 'An Android library that provides a Lifecycle to any ViewHolder ' +
+            'through the implementation of the LifecycleOwner interface, allowing it to interact ' +
+            'with a Lifecycle-Aware Component.'
 
     siteUrl = 'https://github.com/Sarquella/LifecycleCells'
     gitUrl = 'https://github.com/Sarquella/LifecycleCells'
