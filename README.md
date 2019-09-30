@@ -37,7 +37,7 @@ dependencies {
 ```
 
 ## Sample Project
-A basic [sample](https://github.com/Sarquella/LifecycleCells/tree/master/app/src/main/java/dev/sarquella/lifecyclecells/sample) is given to demonstrate how the provided *ViewHolder*'s *Lifecycle* can be used to interact with a *Lifecycle-Aware Component* such as a *LiveData* instance.
+A basic [sample](https://github.com/Sarquella/LifecycleCells/tree/master/app) is given to demonstrate how the provided *ViewHolder*'s *Lifecycle* can be used to interact with a *Lifecycle-Aware Component* such as a *LiveData* instance.
 
 ## Usage
 The library is composed by 3 main abstract classes:
@@ -65,7 +65,7 @@ The library is composed by 3 main abstract classes:
 	}
 	```
 
-3. **Congratulations!** 🙌 Your *ViewHolder* is now a *Lifecycle-Aware Component* 😋
+3. **Congratulations!** 🙌 Your *ViewHolder* is now a *LifecycleOwner* 😋
 
 <br>
 
@@ -78,7 +78,7 @@ class MyPagedListAdapter : LifecyclePagedListAdapter<MyListType, MyViewHolder>(D
 ```
 <br>
 
-### Using a custom Adapter
+### Using a custom Adapter (Less Recommended)
 If you are already extending any other custom *Adapter* and can not make it extend `LifecycleAdapter` nor `LifecyclePagedListAdapter`, you can still make it compatible with `LifecycleViewHolder` by overriding the following *Adapter*'s methods:
 
 * **onViewAttachedToWindow**
@@ -129,7 +129,7 @@ Finally, just get the *LiveData* instance through the *ViewModel* to observe it 
 class MyViewHolder(itemView: View) : LifecycleViewHolder(itemView) {
 	//...
 	fun observeLiveData() {
-	    viewModel.liveDataInstance?.observe(this, Observer {
+	    viewModel.liveDataInstance.observe(this, Observer {
 	      //...
 	    })
 	}
