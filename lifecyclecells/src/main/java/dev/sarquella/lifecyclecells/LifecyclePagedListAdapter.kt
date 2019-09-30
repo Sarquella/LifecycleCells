@@ -1,5 +1,6 @@
 package dev.sarquella.lifecyclecells
 
+import androidx.annotation.CallSuper
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 
@@ -12,16 +13,19 @@ abstract class LifecyclePagedListAdapter<T, VH : LifecycleViewHolder>(
         diffCallback: DiffUtil.ItemCallback<T>) :
         PagedListAdapter<T, VH>(diffCallback) {
 
+    @CallSuper
     override fun onViewAttachedToWindow(holder: VH) {
         super.onViewAttachedToWindow(holder)
         holder.onAttached()
     }
 
+    @CallSuper
     override fun onViewDetachedFromWindow(holder: VH) {
         super.onViewDetachedFromWindow(holder)
         holder.onDetached()
     }
 
+    @CallSuper
     override fun onViewRecycled(holder: VH) {
         super.onViewRecycled(holder)
         holder.onRecycled()
