@@ -4,6 +4,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 import android.view.View
+import androidx.annotation.CallSuper
 import androidx.recyclerview.widget.RecyclerView
 
 /*
@@ -26,15 +27,18 @@ abstract class LifecycleViewHolder(itemView: View) :
         return lifecycle
     }
 
-    fun onAttached() {
+    @CallSuper
+    open fun onAttached() {
         lifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_START)
     }
 
-    fun onDetached() {
+    @CallSuper
+    open fun onDetached() {
         lifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     }
 
-    fun onRecycled() {
+    @CallSuper
+    open fun onRecycled() {
         lifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_DESTROY)
         lifecycleRegistry = createLifeCycle()
     }
