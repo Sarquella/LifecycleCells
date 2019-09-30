@@ -72,7 +72,7 @@ The library is composed by 3 main abstract classes:
 **NOTE:** If you want to use the **_Paging Library_**, make your *Adapter* extend `LifecyclePagedListAdapter` instead:
 
 ```kotlin
-class MyPagedListAdapter : LifecyclePagedListAdapter<MyListType, MyViewHolder>() {
+class MyPagedListAdapter : LifecyclePagedListAdapter<MyListType, MyViewHolder>(DIFF_CALLBACK) {
 	//...
 }
 ```
