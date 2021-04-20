@@ -2,36 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-ext {
-    bintrayRepo = 'LifecycleCells'
-    bintrayName = 'dev.sarquella.lifecyclecells'
-
-    libraryName = 'lifecyclecells'
-
-    publishedGroupId = 'dev.sarquella.lifecyclecells'
-    artifact = 'lifecyclecells'
-    libraryVersion = '1.0.1'
-
-    libraryDescription = 'An Android library that provides a Lifecycle to any ViewHolder ' +
-            'through the implementation of the LifecycleOwner interface, allowing it to interact ' +
-            'with a Lifecycle-Aware Component.'
-
-    siteUrl = 'https://github.com/Sarquella/LifecycleCells'
-    gitUrl = 'https://github.com/Sarquella/LifecycleCells'
-
-    developerId = 'sarquella'
-    developerName = 'Adrià Sarquella Farrés'
-    developerEmail = 'adria@sarquella.dev'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 android {
     compileSdkVersion 28
-
-
 
     defaultConfig {
         minSdkVersion 15
@@ -60,5 +32,3 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
     api "androidx.paging:paging-runtime:$paging_version"
 }
-
-apply from: 'https://raw.githubusercontent.com/Sarquella/JCenter-Uploader/master/jcenter_uploader.gradle'
