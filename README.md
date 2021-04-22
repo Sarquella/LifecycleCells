@@ -4,7 +4,7 @@ Lifecycle Cells
 An Android library that provides a *[Lifecycle](https://developer.android.com/reference/android/arch/lifecycle/Lifecycle)* to any *[ViewHolder](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ViewHolder)* through the implementation of the *[LifecycleOwner](https://developer.android.com/reference/android/arch/lifecycle/LifecycleOwner)* interface, allowing it to interact with a *[Lifecycle-Aware Component](https://developer.android.com/topic/libraries/architecture/lifecycle#implementing-lco)*.
 
 #### 100% Kotlin ❤️
-[![Download](https://api.bintray.com/packages/sarquella/LifecycleCells/dev.sarquella.lifecyclecells/images/download.svg) ](https://bintray.com/sarquella/LifecycleCells/dev.sarquella.lifecyclecells/_latestVersion) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![License](https://img.shields.io/badge/license-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Maven Central](https://img.shields.io/maven-central/v/dev.sarquella.lifecyclecells/lifecyclecells)](https://search.maven.org/artifact/dev.sarquella.lifecyclecells/lifecyclecells) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![License](https://img.shields.io/badge/license-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ### Follow
 <a href='https://ko-fi.com/S6S8RENM' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
