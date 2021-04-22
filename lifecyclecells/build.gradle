@@ -12,7 +12,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
     }
 
     buildTypes {
@@ -39,7 +39,7 @@ dependencies {
 mavenCentralPublication {
     groupId = 'dev.sarquella.lifecyclecells'
     artifact = 'lifecyclecells'
-    version = '1.0.1'
+    version = '1.0.2'
 
     description = 'An Android library that provides a Lifecycle to any ViewHolder ' +
             'through the implementation of the LifecycleOwner interface, allowing it to interact ' +
